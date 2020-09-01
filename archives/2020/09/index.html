@@ -1,62 +1,149 @@
-{% extends '_layout.swig' %}
-{% import '_macro/post-collapse.swig' as post_template %}
-{% import '_macro/sidebar.swig' as sidebar_template %}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Archives: 2020/9 | Planet</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Talk is cheap, write and code.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Planet">
+<meta property="og:url" content="http://yoursite.com/archives/2020/09/index.html">
+<meta property="og:site_name" content="Planet">
+<meta property="og:description" content="Talk is cheap, write and code.">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="Zhang Yuehan">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Planet" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/tocas.css">
 
-{% block title %}{{ __('title.archive') }} | {{ config.title }}{% endblock %}
+  
+<link rel="stylesheet" href="/css/animate.css">
 
-{% block page_class %}page-archive{% endblock %}
+  
+<link rel="stylesheet" href="/css/style.css">
 
-{% block content %}
+  <style type="text/css">
+    a.title-link:hover{
+        color: #34b2db !important;
+    }
 
-  {#####################}
-  {### ARCHIVE BLOCK ###}
-  {#####################}
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
+    a.title-link:active{
+        color: #2075c1 !important;
+    }
 
-      <span class="archive-page-counter">
-        {% set cheers %}
-        {% set posts_length = site.posts.length %}
-        {% if posts_length > 210 %} {% set cheers = 'excellent' %}
-          {% elif posts_length > 130 %} {% set cheers = 'great' %}
-          {% elif posts_length > 80 %} {% set cheers = 'good' %}
-          {% elif posts_length > 50 %} {% set cheers = 'nice' %}
-          {% elif posts_length > 30 %} {% set cheers = 'ok' %}
-        {% else %}
-          {% set cheers = 'um' %}
-        {% endif %}
-        {{ __('cheers.' + cheers) }}! {{ _p("counter.archive_posts", site.posts.length) }} {{ __('keep_on') }}
-      </span>
+    #menu-color-id{
+        background : #f7f7f7;
+    }
 
-      {% for post in page.posts %}
+    #menu-color-id a{
+        color: #5a5a5a;
+    }
+  </style>
+  
+<script src="/js/tocas.js"></script>
 
-        {# Show year #}
-        {% set year %}
-        {% set post.year = date(post.date, 'YYYY') %}
+  
 
-        {% if post.year !== year %}
-          {% set year = post.year %}
-          <div class="collection-title">
-            <{% if theme.seo %}h2{% else %}h1{% endif %} class="archive-year" id="archive-year-{{ year }}">{{ year }}</{% if theme.seo %}h2{% else %}h1{% endif %}>
-          </div>
-        {% endif %}
-        {# endshow #}
+<meta name="generator" content="Hexo 5.1.1"></head>
 
-        {{ post_template.render(post) }}
+<body>
+<!-- navigation -->
 
-      {% endfor %}
+<div class="ts fluid basic link big menu" id="menu-color-id">
 
+    <!-- ejs : align to post page or index page -->
+        
+            <div class="ts narrow container" style=" padding-left: 25px; ">
+        
+
+        
+            <a class="item" href="/">Home</a>
+        
+            <a class="item" href="/archives">Archives</a>
+        
     </div>
-  </div>
-  {#########################}
-  {### END ARCHIVE BLOCK ###}
-  {#########################}
+</div>
+<!-- the end of navigation -->
 
-  {% include '_partials/pagination.swig' %}
+<!-- big bang title -->
+<div class="ts padded horizontally fitted fluid slate" style="background-color: #f7f7f7;">
+    <!-- ejs : align to post page or index page -->
+    
+        <div class="ts narrow container relaxed stackable grid" id="big-bang-title" style=" padding-left: 35px; ">
+    
+        <!-- Title -->
+        <h1 class="ts eleven wide column header be-center-h1">
+            <span style="color: #404040;" id="big-title">Planet</span>
+            <div class="sub header" id="slogan-bar" style=" margin-top: 15px; color: #404040;"></div>
+        </h1>
+        <!-- the end of title -->
+    </div>
+</div>
+<!-- the end of big bang title -->
 
-{% endblock %}
 
-{% block sidebar %}
-  {{ sidebar_template.render(false) }}
-{% endblock %}
+<!-- archive section -->
+<div class="ts narrow container" style=" margin-bottom: 35px; ">
+    <div style=" padding-top: 35px; "><!-- split line--></div>
+        <!-- Archives -->
+        
+            
+                <div class="ts small header" style=" color: #989898; text-shadow: 1px 1px 1px #e7e7e7; ">2020.9</div>
+                <div class="ts doubling link cards four">
+            
+
+            
+
+            <div class="ts card" onclick="location.href='/2020/09/01/hello-world/'">
+                <div class="content">
+                    <div class="header">Hello World</div>
+                    <div class="bullted meta">
+                        <div>
+                            2020-9-1
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+    </div>
+</div>
+<!-- the end of archive section -->
+
+<!-- footer -->
+<div class="ts attached secondary segment">
+    <div class="ts narrow container">
+        <br>
+        <div class="ts large center aligned header">
+            
+                Powered by <a target="_blank" rel="noopener" href="https://hexo.io">&nbsp;Hexo</a>, Theme designs by <a target="_blank" rel="noopener" href="https://github.com/hpcslag">&nbsp;@hpcslag</a>.
+            
+            <div class="smaller sub header">
+            
+                Style-Framework <a target="_blank" rel="noopener" href="https://tocas-ui.com">&nbsp;Tocas-UI</a> designs by <a target="_blank" rel="noopener" href="https://github.com/YamiOdymel">&nbsp;@YamiOldmel</a>
+            
+            </div>
+        </div>
+        <br>
+    </div>
+</div>
+<!-- the end of footer -->
+<script type="text/javascript">
+    
+    const slogans = ["Hallo, dit is mijn blog","嗨，這是我的博客!","안녕하세요, 제 블로그입니다.","Hi, This is my blog!","こんにちは、私のブログへようこそ!","مرحبا، مرحبا بك في مدونتي"];
+</script>
+
+<script src="/js/script.js"></script>
+
+</body>
+</html>
