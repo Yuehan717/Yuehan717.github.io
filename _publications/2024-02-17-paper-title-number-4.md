@@ -3,9 +3,11 @@ title: "High-Resolution Be Aware! Improving the Self-Supervised Real-World Super
 collection: publications
 category: manuscripts
 permalink: /publication/2024-02-17-paper-title-number-4
-excerpt: 'This paper is about fixing template issue #693.'
-date: 2024-02-17
+excerpt: 'A self-supervised learning framework novelly incooperates available high-resolution knowledge into self-supervised SR model adaptations.'
+# date: 2024-02-17
 # venue: 'GitHub Journal of Bugs'
+header:
+  teaser: "/images/thumbnails/paper4.png"
 paperurl: 'https://arxiv.org/abs/2411.16175'
 citation: 'Zhang, Y., & Yao, A. (2024). arXiv preprint arXiv:2411.16175.'
 ---
