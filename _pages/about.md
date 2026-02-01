@@ -24,12 +24,12 @@ Now I expand my explorations to image and video generation tasks, specifically, 
 ---
 ## Education
 
-* **Ph.D. in Computer Science** | *National University of Singapore, Singapore* | 2020 – 2025
-  * Dissertation: *IMPROVING SUPER-RESOLUTION METHODS FOR
-REAL-WORLD REQUIREMENTS*
+* **Ph.D. in Computer Science** | *National University of Singapore* | 2020 – 2025
+  * Dissertation: *Improving Super-Resolution Methods for
+Real-World Requirements*
   * Advisor: Prof. Angela Yao
 
-* **B.Sc. in Computer Science and Technology** | *Huazhong University of Science and Technology, Wuhan, China* | 2016 – 2020
+* **B.Sc. in Computer Science and Technology** | *Huazhong University of Science and Technology, China* | 2016 – 2020
 
 
 ## Selected Publications
