@@ -35,7 +35,33 @@ Real-World Requirements*
 ## Selected Publications
 
 {% for post in site.publications reversed limit:3 %}
-  {% include archive-single.html type="list"%}
+  {% include archive-single.html type="list" %}
 {% endfor %}
 
+<br>
 [View all publications](/publications/){: .btn .btn--info}
+
+<style>
+  /* Shrink the title font and details */
+  .archive__item-title {
+    font-size: 0.95em !important;
+    margin-top: 0 !important;
+  }
+  .archive__item-excerpt {
+    font-size: 0.85em !important;
+    line-height: 1.4;
+  }
+  /* Ensure the thumbnail is a small square on the left */
+  .list__item .archive__item-teaser {
+    max-width: 100px;
+    float: left;
+    margin-right: 20px;
+  }
+  /* Clear the float so the button doesn't overlap */
+  .list__item {
+    clear: both;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #f2f2f2;
+    padding-bottom: 10px;
+  }
+</style>
