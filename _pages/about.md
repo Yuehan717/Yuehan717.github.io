@@ -42,47 +42,48 @@ Real-World Requirements*
 [View all publications](/publications/){: .btn .btn--info}
 
 <style>
-  /* Container for each publication item */
+  /* Container for each publication item - thumbnail on left, content on right */
   .list__item {
-    display: flex !important;
-    align-items: flex-start !important;
     margin-bottom: 20px !important;
     border-bottom: 1px solid #eee;
     padding-bottom: 15px;
   }
 
-  /* The thumbnail wrapper */
-  .archive__item-teaser {
-    flex: 0 0 100px !important; /* This sets the width of the image to 100px */
+  .list__item .archive__item {
+    display: flex !important;
+    align-items: flex-start !important;
+  }
+
+  /* Thumbnail on the left */
+  .list__item .archive__item-teaser {
+    flex: 0 0 100px !important;
     margin-right: 20px !important;
-    margin-bottom: 0 !important; /* Prevents it from pushing text down */
+    margin-bottom: 0 !important;
     max-height: 100px;
     overflow: hidden;
     display: block !important;
   }
 
-  /* The actual image inside the wrapper */
-  .archive__item-teaser img {
+  .list__item .archive__item-teaser img {
     width: 100% !important;
     height: auto !important;
     border-radius: 4px;
     margin: 0 !important;
   }
 
-  /* The text content wrapper */
-  .archive__item-body {
+  /* Text content on the right */
+  .list__item .archive__item-body {
     flex: 1;
   }
 
-  /* Shrinking the font for a cleaner look */
-  .archive__item-title {
+  .list__item .archive__item-title {
     font-size: 1.1rem !important;
     margin-top: 0 !important;
     line-height: 1.2 !important;
   }
 
-  .archive__item-excerpt {
-    font-size: 0.85rem !important;
-    margin-top: 5px !important;
+  /* Hide paper description on about page */
+  .list__item .archive__item-excerpt {
+    display: none !important;
   }
 </style>
