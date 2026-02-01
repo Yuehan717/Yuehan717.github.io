@@ -35,7 +35,7 @@ Real-World Requirements*
 ## Selected Publications
 
 {% for post in site.publications reversed limit:3 %}
-  {% include archive-single.html type="grid"%}
+  {% include archive-single.html type="list"%}
 {% endfor %}
 
 [View all publications](/publications/){: .btn .btn--info}
