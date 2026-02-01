@@ -7,7 +7,7 @@ excerpt: 'A thorough exploration on Transformer designs to handling the changing
 # date: 2010-10-01
 venue: 'ECCV2024'
 header:
-  teaser: "images/thumbnails/paper2.png"
+  teaser: "/assets/images/thumbnails/paper2.png"
 # slidesurl: 'http://academicpages.github.io/files/slides2.pdf'
 paperurl: 'https://link.springer.com/chapter/10.1007/978-3-031-73397-0_24'
 citation: 'Zhang, Y., & Yao, A. (2024, September). In European Conference on Computer Vision (pp. 412-428). Cham: Springer Nature Switzerland.'

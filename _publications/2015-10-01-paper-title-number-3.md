@@ -7,7 +7,7 @@ excerpt: 'A frequency specialized learning framework to mitigate the conflicts b
 # date: 2015-10-01
 venue: 'ECCV2022'
 header:
-  teaser: "/images/thumbnails/paper3.png"
+  teaser: "/assets/images/thumbnails/paper3.png"
 # slidesurl: 'http://academicpages.github.io/files/slides3.pdf'
 paperurl: 'https://link.springer.com/chapter/10.1007/978-3-031-19797-0_7'
 citation: 'Zhang, Y., Ji, B., Hao, J., & Yao, A. (2022, October). In European Conference on Computer Vision (pp. 108-125). Cham: Springer Nature Switzerland.'
