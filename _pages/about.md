@@ -33,40 +33,56 @@ Real-World Requirements*
 
 
 ## Selected Publications
-{% assign sorted_pubs = site.publications | sort: 'weight' %}
-{% for post in site.publications reversed limit:3 %}
+{% assign sorted_publications = site.publications | sort: 'weight' %}
+{% for post in sorted_publications limit:3 %}
   {% include archive-single.html type="list" %}
 {% endfor %}
 
-<br>
+<div style="clear: both;"></div>
 [View all publications](/publications/){: .btn .btn--info}
 
 <style>
-  /* Flexbox layout for the list item */
+  /* Container for each publication item */
   .list__item {
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 30px;
+    display: flex !important;
+    align-items: flex-start !important;
+    margin-bottom: 20px !important;
     border-bottom: 1px solid #eee;
     padding-bottom: 15px;
   }
 
-  /* Style the thumbnail */
+  /* The thumbnail wrapper */
   .archive__item-teaser {
-    flex: 0 0 120px; /* Fixed width for image */
-    margin-right: 20px;
+    flex: 0 0 100px !important; /* This sets the width of the image to 100px */
+    margin-right: 20px !important;
+    margin-bottom: 0 !important; /* Prevents it from pushing text down */
+    max-height: 100px;
     overflow: hidden;
-    border-radius: 4px;
+    display: block !important;
   }
 
-  /* Shrink text font */
+  /* The actual image inside the wrapper */
+  .archive__item-teaser img {
+    width: 100% !important;
+    height: auto !important;
+    border-radius: 4px;
+    margin: 0 !important;
+  }
+
+  /* The text content wrapper */
+  .archive__item-body {
+    flex: 1;
+  }
+
+  /* Shrinking the font for a cleaner look */
   .archive__item-title {
-    font-size: 1.0rem !important;
-    margin-bottom: 5px !important;
+    font-size: 1.1rem !important;
+    margin-top: 0 !important;
+    line-height: 1.2 !important;
   }
 
   .archive__item-excerpt {
     font-size: 0.85rem !important;
-    color: #666;
+    margin-top: 5px !important;
   }
 </style>
