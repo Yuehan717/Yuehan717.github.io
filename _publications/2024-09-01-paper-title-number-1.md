@@ -1,6 +1,7 @@
 ---
 title: "Pairwise distance distillation for unsupervised real-world image super-resolution."
 collection: publications
+weight: 1
 category: conferences
 permalink: /publication/2009-10-01-paper-title-number-1
 excerpt: 'A unsupervised learning framework to adapt SR models into specific real-world conditions.'

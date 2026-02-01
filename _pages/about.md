@@ -33,7 +33,7 @@ Real-World Requirements*
 
 
 ## Selected Publications
-
+{% assign sorted_pubs = site.publications | sort: 'weight' %}
 {% for post in site.publications reversed limit:3 %}
   {% include archive-single.html type="list" %}
 {% endfor %}
@@ -42,26 +42,31 @@ Real-World Requirements*
 [View all publications](/publications/){: .btn .btn--info}
 
 <style>
-  /* Shrink the title font and details */
-  .archive__item-title {
-    font-size: 0.95em !important;
-    margin-top: 0 !important;
-  }
-  .archive__item-excerpt {
-    font-size: 0.85em !important;
-    line-height: 1.4;
-  }
-  /* Ensure the thumbnail is a small square on the left */
-  .list__item .archive__item-teaser {
-    max-width: 100px;
-    float: left;
-    margin-right: 20px;
-  }
-  /* Clear the float so the button doesn't overlap */
+  /* Flexbox layout for the list item */
   .list__item {
-    clear: both;
-    margin-bottom: 20px;
-    border-bottom: 1px solid #f2f2f2;
-    padding-bottom: 10px;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+  }
+
+  /* Style the thumbnail */
+  .archive__item-teaser {
+    flex: 0 0 120px; /* Fixed width for image */
+    margin-right: 20px;
+    overflow: hidden;
+    border-radius: 4px;
+  }
+
+  /* Shrink text font */
+  .archive__item-title {
+    font-size: 1.0rem !important;
+    margin-bottom: 5px !important;
+  }
+
+  .archive__item-excerpt {
+    font-size: 0.85rem !important;
+    color: #666;
   }
 </style>

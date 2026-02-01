@@ -6,6 +6,7 @@ permalink: /publication/2024-02-17-paper-title-number-4
 excerpt: 'A self-supervised learning framework novelly incooperates available high-resolution knowledge into self-supervised SR model adaptations.'
 # date: 2024-02-17
 # venue: 'GitHub Journal of Bugs'
+weight: 4
 header:
   teaser: "https://raw.githubusercontent.com/Yuehan717/Yuehan717.github.io/refs/heads/master/assets/images/thumbnails/paper4.png"
 paperurl: 'https://arxiv.org/abs/2411.16175'

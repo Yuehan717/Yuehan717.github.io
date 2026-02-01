@@ -1,6 +1,7 @@
 ---
 title: "RealViformer: Investigating Attention for Real-World Video Super-Resolution"
 collection: publications
+weight: 2
 category: conferences
 permalink: /publication/2010-10-01-paper-title-number-2
 excerpt: 'A thorough exploration on Transformer designs to handling the changing real-world contions for video super-resolution.'

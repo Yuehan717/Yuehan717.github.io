@@ -2,6 +2,7 @@
 title: "Perception-distortion balanced ADMM optimization for single-image super-resolution."
 collection: publications
 category: conferences
+weight: 3
 permalink: /publication/2015-10-01-paper-title-number-3
 excerpt: 'A frequency specialized learning framework to mitigate the conflicts between regression and generation learning objectives and therefore achieves a fidelity-perception-balanced quality.'
 # date: 2015-10-01
