@@ -7,7 +7,7 @@ excerpt: 'A self-supervised learning framework novelly incooperates available hi
 # date: 2024-02-17
 # venue: 'GitHub Journal of Bugs'
 header:
-  teaser: "/assets/images/thumbnails/paper4.png"
+  teaser: "[/assets/images/thumbnails/paper4.png](https://raw.githubusercontent.com/Yuehan717/Yuehan717.github.io/refs/heads/master/assets/images/thumbnails/paper4.png)"
 paperurl: 'https://arxiv.org/abs/2411.16175'
 citation: 'Zhang, Y., & Yao, A. (2024). arXiv preprint arXiv:2411.16175.'
 ---

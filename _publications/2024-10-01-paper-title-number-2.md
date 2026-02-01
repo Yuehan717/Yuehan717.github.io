@@ -5,9 +5,9 @@ category: conferences
 permalink: /publication/2010-10-01-paper-title-number-2
 excerpt: 'A thorough exploration on Transformer designs to handling the changing real-world contions for video super-resolution.'
 # date: 2010-10-01
-venue: 'ECCV2024'
+venue: 'ECCV'
 header:
-  teaser: "/assets/images/thumbnails/paper2.png"
+  teaser: "[/assets/images/thumbnails/paper2.png](https://raw.githubusercontent.com/Yuehan717/Yuehan717.github.io/refs/heads/master/assets/images/thumbnails/paper2.png)"
 # slidesurl: 'http://academicpages.github.io/files/slides2.pdf'
 paperurl: 'https://link.springer.com/chapter/10.1007/978-3-031-73397-0_24'
 citation: 'Zhang, Y., & Yao, A. (2024, September). In European Conference on Computer Vision (pp. 412-428). Cham: Springer Nature Switzerland.'
