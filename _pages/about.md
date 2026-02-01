@@ -54,12 +54,12 @@ Real-World Requirements*
     align-items: flex-start !important;
   }
 
-  /* Thumbnail on the left */
+  /* Thumbnail on the left - larger size */
   .list__item .archive__item-teaser {
-    flex: 0 0 100px !important;
+    flex: 0 0 160px !important;
     margin-right: 20px !important;
     margin-bottom: 0 !important;
-    max-height: 100px;
+    max-height: 120px;
     overflow: hidden;
     display: block !important;
   }
@@ -71,13 +71,19 @@ Real-World Requirements*
     margin: 0 !important;
   }
 
-  /* Text content on the right */
+  /* Text content on the right - smaller font */
   .list__item .archive__item-body {
     flex: 1;
+    font-size: 0.85rem !important;
+  }
+
+  .list__item .archive__item-body p {
+    font-size: 0.8rem !important;
+    margin: 2px 0 !important;
   }
 
   .list__item .archive__item-title {
-    font-size: 1.1rem !important;
+    font-size: 0.95rem !important;
     margin-top: 0 !important;
     line-height: 1.2 !important;
   }
